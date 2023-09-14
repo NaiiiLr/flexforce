@@ -1,0 +1,7 @@
+{
+  "name": "flexforce",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
