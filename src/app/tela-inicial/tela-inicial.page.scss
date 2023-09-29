@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    --background:black;
+}
+
+ion-img{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 200px;
+    margin: auto;
+}
+
+#message{
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 20%;
+    text-align: center;
+    border: 3px solid #ff914d;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    padding: 20px;
+}
+
+b{
+    text-decoration: none;
+    color: #ffac4b;
+}
+
+ion-col ion-img{
+    width: 140px;
+}
+#fotoaluno{
+    width: 160px;
+}
