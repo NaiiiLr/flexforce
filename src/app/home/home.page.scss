@@ -3,18 +3,14 @@
   margin: 0;
 }
 
-.logo-img{
-  width: 50px;
-  height: 50px;
-  float: right;
-  margin: 5px;
+ion-content{
+  --background: linear-gradient(to bottom right, #7843A9, #D7799E);
 }
 
-ion-title{
-  margin-top: 20px;
+ion-tab-bar{
+  background:rgb(255, 255, 255);
 }
-.icon-user{
-  margin: 5px;
-  width: 40px;
-  height: 40px;
+
+ion-icon{
+  color: #D7799E;
 }
