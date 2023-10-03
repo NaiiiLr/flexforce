@@ -4,7 +4,7 @@
 }
 
 ion-content{
-  --background: linear-gradient(to bottom right, #7843A9, #D7799E);
+  --background: linear-gradient(to bottom right,#563972 0%, #7843A9 40%, #D7799E 80%);
 }
 
 ion-tab-bar{
@@ -12,5 +12,6 @@ ion-tab-bar{
 }
 
 ion-icon{
-  color: #D7799E;
+  color: #f596bc;
+  width: 25px;
 }

@@ -9,9 +9,9 @@ import { LoadingController } from '@ionic/angular';
 })
 export class CadastroUsuarioPage implements OnInit {
 
-  public nome:string = "";
-  public senha:string = "";
-  public confirmeSenha:string = "";
+  public nome:string = '';
+  public senha:string = '';
+  public confirmeSenha:string = '';
 
   constructor(
     public requisicao_service:RequisicaoService,
