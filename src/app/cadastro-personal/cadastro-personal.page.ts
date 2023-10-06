@@ -4,16 +4,16 @@ import { LoadingController } from '@ionic/angular';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-cadastro-usuario',
-  templateUrl: './cadastro-usuario.page.html',
-  styleUrls: ['./cadastro-usuario.page.scss'],
+  selector: 'app-cadastro-personal',
+  templateUrl: './cadastro-personal.page.html',
+  styleUrls: ['./cadastro-personal.page.scss'],
 })
-export class CadastroUsuarioPage implements OnInit {
+export class CadastroPersonalPage implements OnInit {
 
   public id:number = 0;
-  public nome:string = '';
-  public senha:string = '';
-  public confirmeSenha:string = '';
+  public nomePersonal:string = '';
+  public senhaPersonal:string = '';
+  public confirmeSenhaPersonal:string = '';
 
   constructor(
     public requisicao_service:RequisicaoService,
@@ -25,13 +25,13 @@ export class CadastroUsuarioPage implements OnInit {
       (params:any) => {
         this.id = params.id == undefined ? 0 :params.id;
         this.requisicao_service.get({
-          controller:'usuario-get',
+          controller:'personal-get',
           id:this.id
         })
         .subscribe(
           (_dados:any) => {
-            this.nome = _dados.nome;
-            this.senha = _dados.login;
+            this.nomePersonal = _dados.nome_personal;
+            this.senhaPersonal = _dados.login_personal;
           }
         )
       }
@@ -49,10 +49,10 @@ export class CadastroUsuarioPage implements OnInit {
     await loading.present();
 
     const fd = new FormData();
-    fd.append('controller','usuario');
+    fd.append('controller','personal');
     fd.append('id', String(this.id));
-    fd.append('nome', this.nome);
-    fd.append('senha', this.senha);
+    fd.append('nome', this.nomePersonal);
+    fd.append('senha', this.senhaPersonal);
 
     this.requisicao_service
     .post(fd)

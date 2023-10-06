@@ -4,14 +4,38 @@
 }
 
 ion-content{
-  --background: linear-gradient(to bottom right,#563972 0%, #7843A9 40%, #D7799E 80%);
+  --background: black;
 }
 
-ion-tab-bar{
-  background:rgb(255, 255, 255);
+ion-grid{
+  width: 80%;
+  margin: 0 auto;
 }
 
-ion-icon{
-  color: #f596bc;
-  width: 25px;
+ion-col{
+  padding-top: 5px;
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  height: 80px;
+  border: 3px solid #5E7FB4;
+}
+
+#altura{
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-right: 2px;
+  padding-top: 20px;
+}
+
+#peso{
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-left: 2px;
+  padding-top: 20px;
+}
+
+#imc{
+  text-align: center;
+  font-size: smaller;
 }

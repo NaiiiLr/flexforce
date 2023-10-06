@@ -30,6 +30,14 @@ const routes: Routes = [
     path: 'usuario-listar',
     loadChildren: () => import('./usuario-listar/usuario-listar.module').then( m => m.UsuarioListarPageModule)
   },
+  {
+    path: 'cadastro-personal',
+    loadChildren: () => import('./cadastro-personal/cadastro-personal.module').then( m => m.CadastroPersonalPageModule)
+  },
+  {
+    path: 'login-personal',
+    loadChildren: () => import('./login-personal/login-personal.module').then( m => m.LoginPersonalPageModule)
+  },
 ];
 
 @NgModule({

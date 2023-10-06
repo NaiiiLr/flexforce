@@ -7,6 +7,7 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 
 import { MyFooterComponent } from '../my-footer/my-footer.component';
+import { MyHeaderComponent } from '../my-header/my-header.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { MyFooterComponent } from '../my-footer/my-footer.component';
   declarations: [
     HomePage, 
     MyFooterComponent,
+    MyHeaderComponent,
   ],
 })
 

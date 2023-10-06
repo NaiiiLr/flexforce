@@ -4,25 +4,25 @@
       <div class="box">
         <div class="img">
           <ion-img 
-          src="../assets/img/logo.png"
+          src="../assets/img/logopersonal.png"
           class="img"/>
         </div>
         <div class="inputbox">
           <ion-label>Nome</ion-label>
-          <ion-input type="text" ([ngModel])="nome"></ion-input>
+          <ion-input type="text" ([ngModel])="nomePersonal"></ion-input>
         </div>
         <div class="inputbox">
           <ion-icon name="lock-closed-sharp"></ion-icon>
           <ion-label>Senha</ion-label>
-          <ion-input type="password" ([ngModel])="senha"></ion-input>
+          <ion-input type="password" ([ngModel])="senhaPersonal"></ion-input>
         </div>
         <div class="inputbox">
           <ion-icon name="lock-closed-sharp"></ion-icon>
           <ion-label>Confirme a senha</ion-label>
-          <ion-input type="password" ([ngModel])="confirmeSenha"></ion-input>
+          <ion-input type="password" ([ngModel])="confirmeSenhaPersonal"></ion-input>
         </div>
         <ion-button (click)="salvar()"> Cadastrar </ion-button>
-        <p>Já possui conta? <br> <a href="/login-usuario">Entre aqui</a></p>
+        <p>Já possui conta? <br> <a href="/login-personal">Entre aqui</a></p>
       </div>
     </section>
   </ion-content>

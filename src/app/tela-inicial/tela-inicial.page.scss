@@ -1,7 +1,8 @@
 *{
     padding: 0;
     margin: 0;
-    --background:black;
+    --background: black;
+    margin-top: 10px;
 }
 
 ion-img{
@@ -16,7 +17,7 @@ ion-img{
     margin-top: 10%;
     margin-left: 20%;
     text-align: center;
-    border: 3px solid #ff914d;
+    border: 3px solid #5E7FB4;
 }
 
 h2{
@@ -27,14 +28,14 @@ p{
     padding: 20px;
 }
 
-b{
+a{
     text-decoration: none;
-    color: #ffac4b;
+    color: #5E7FB4;
 }
 
 ion-col ion-img{
     width: 140px;
 }
 #fotoaluno{
-    width: 160px;
+    width: 165px;
 }
