@@ -5,9 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
-import { MyFooterComponent } from '../my-footer/my-footer.component';
-import { MyHeaderComponent } from '../my-header/my-header.component';
 
 @NgModule({
   imports: [
@@ -15,11 +14,10 @@ import { MyHeaderComponent } from '../my-header/my-header.component';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
+    SharedModule,
   ],
   declarations: [
     HomePage, 
-    MyFooterComponent,
-    MyHeaderComponent,
   ],
 })
 

@@ -1,31 +1,49 @@
 <ion-app>
-  <app-my-header></app-my-header>
   <ion-content>
-    <ion-grid>
+    <ion-grid id="header">
       <ion-row>
-        <ion-col id="altura">
+        <ion-col id="altura" class="informacoes">
           <b>
             <h6>Altura</h6>
             <p></p>
           </b>
         </ion-col>
-        <ion-col id="imc">
+        <ion-col id="imc" class="informacoes">
           <b>
             <h6>IMC</h6>
             <p></p>
             <p></p>
           </b>
         </ion-col>
-        <ion-col id="peso">
+        <ion-col id="peso" class="informacoes">
           <b>
             <h6>Peso</h6>
             <p></p>
           </b>
         </ion-col>
       </ion-row>
-      <ion-row>
-      </ion-row>
     </ion-grid>
+    
+    <ion-list lines="none">
+      <ion-list-header> 
+        Atividades recentes:
+      </ion-list-header>
+      <ion-item>
+        <p>Realizou o treino pipipi</p>
+        <p>4x10</p>
+        <ion-note color="white">09/10/2023</ion-note>
+      </ion-item>
+      <ion-item>
+
+      </ion-item>
+      <ion-item>
+
+      </ion-item>
+      <ion-item>
+        
+      </ion-item>
+    </ion-list>
+    
   </ion-content>
   <app-my-footer></app-my-footer>
 </ion-app>

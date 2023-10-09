@@ -7,14 +7,17 @@ import { IonicModule } from '@ionic/angular';
 import { ListaTreinoPageRoutingModule } from './lista-treino-routing.module';
 
 import { ListaTreinoPage } from './lista-treino.page';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ListaTreinoPageRoutingModule
+    ListaTreinoPageRoutingModule,
+    SharedModule
   ],
-  declarations: [ListaTreinoPage]
+  declarations: [ListaTreinoPage,
+  ],
 })
 export class ListaTreinoPageModule {}
