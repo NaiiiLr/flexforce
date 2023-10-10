@@ -1,9 +1,5 @@
 <ion-app>
   <ion-content>
-
-    <ion-button
-      routerlink="/usuario/form">Novo
-    </ion-button>
     <ion-list>
       <ion-item *ngFor="let usuario of usuarios">
         <ion-label> {{ usuario.nome }} </ion-label>
@@ -12,4 +8,5 @@
       </ion-item>
     </ion-list>
   </ion-content>
+  <app-my-footer></app-my-footer>
 </ion-app>

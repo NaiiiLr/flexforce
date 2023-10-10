@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { UsuarioListarPageRoutingModule } from './usuario-listar-routing.module';
 
 import { UsuarioListarPage } from './usuario-listar.page';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    UsuarioListarPageRoutingModule
+    UsuarioListarPageRoutingModule,
+    SharedModule,
   ],
   declarations: [UsuarioListarPage]
 })

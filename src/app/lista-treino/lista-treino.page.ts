@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-lista-treino',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaTreinoPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    public alertController: AlertController
+  ) { }
 
   ngOnInit() {
   }
