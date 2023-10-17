@@ -37,7 +37,11 @@ const routes: Routes = [
   {
     path: 'login-personal',
     loadChildren: () => import('./login-personal/login-personal.module').then( m => m.LoginPersonalPageModule)
+  },  {
+    path: 'treinos',
+    loadChildren: () => import('./treinos/treinos.module').then( m => m.TreinosPageModule)
   },
+
 ];
 
 @NgModule({
