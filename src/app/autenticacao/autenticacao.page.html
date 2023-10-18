@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true">
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="senha"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="logar()">Entrar</ion-button>
+</ion-content>
+
+<ion-alert
+  [isOpen] = "is_open_error_alert"
+  header = "Ops!"
+  message = "Login e/ou Senha não conferem."
+  [buttons]= "['Fechar']"
+  ></ion-alert>
