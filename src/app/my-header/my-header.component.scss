@@ -1,3 +1,34 @@
-*{
-    --background: black;
+ion-grid{
+    align-items: center;
+}
+a{
+    color: white;
+}
+ion-col{
+    text-align: center;
+}
+ion-row{
+    margin-bottom: 20px;
+}
+.grid{
+    margin-top: 20px;
+    width: 80%;
+}
+div{
+    position: relative;
+}
+ion-button{
+    --background: none;
+}
+#titulo{
+    border-bottom: 2px solid #5E7FB4;
+    padding-top:10%;
+}
+#temporizador{
+    border-bottom: 2px solid #5E7FB4;
+}
+ion-icon{
+    border:2px solid #5E7FB4;
+    padding: 5px;
+    border-radius: 20px;
 }

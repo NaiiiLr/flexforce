@@ -1,14 +1,52 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit } from '@angular/core';
+import { ActionSheetController } from '@ionic/angular';
 
 @Component({
   selector: 'app-my-header',
   templateUrl: './my-header.component.html',
   styleUrls: ['./my-header.component.scss'],
 })
-export class MyHeaderComponent  implements OnInit {
+export class MyHeaderComponent implements OnInit {
+  presentingElement = undefined;
+  private canDismissOverride = false; 
+  constructor(private actionSheetCtrl: ActionSheetController) { }
+  
+  ngOnInit() {
+  }
+  
+  dismissChange = new EventEmitter<boolean>();
 
-  constructor() { }
+  onDismissChange(canDismiss: boolean) {
+    this.canDismissOverride = canDismiss;
+  }
 
-  ngOnInit() {}
+  onWillPresent() {
+    this.canDismissOverride = false;
+  }
 
+  canDismiss = async () => {
+    if (this.canDismissOverride) {
+      return true;
+    }
+
+    const actionSheet = await this.actionSheetCtrl.create({
+      header: 'Você tem certeza?',
+      buttons: [
+        {
+          text: 'Sim',
+          role: 'confirm',
+        },
+        {
+          text: 'Não',
+          role: 'cancel',
+        },
+      ],
+    });
+
+    actionSheet.present();
+
+    const { role } = await actionSheet.onWillDismiss();
+
+    return role === 'confirm';
+  };
 }

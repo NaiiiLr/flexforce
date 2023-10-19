@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MyFooterComponent } from '../my-footer/my-footer.component';
 import { MyHeaderComponent } from '../my-header/my-header.component';
 import { IonicModule } from '@ionic/angular';
+import { ChildComponent } from '../child/child.component';
 
 
 
@@ -10,6 +11,7 @@ import { IonicModule } from '@ionic/angular';
   declarations: [
     MyFooterComponent,
     MyHeaderComponent,
+    ChildComponent
   ],
   imports: [
     CommonModule,
@@ -18,6 +20,7 @@ import { IonicModule } from '@ionic/angular';
   exports: [
     MyFooterComponent,
     MyHeaderComponent,
+    ChildComponent
   ]
 })
 export class SharedModule { }
