@@ -30,7 +30,7 @@ export class MyHeaderComponent implements OnInit {
     }
 
     const actionSheet = await this.actionSheetCtrl.create({
-      header: 'Você tem certeza?',
+      header: 'Deseja cancelar o treino?',
       buttons: [
         {
           text: 'Sim',

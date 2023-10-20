@@ -15,10 +15,11 @@ ion-content{
 .informacoes{
   padding-top: 5px;
   margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
   color: white;
   height: 80px;
-  border: 3px solid #5E7FB4;
+  border: 2px solid #5E7FB4;
 }
 
 #altura{
@@ -40,26 +41,7 @@ ion-content{
   font-size: smaller;
 }
 
-ion-list{
-  background: none;
-  width: 80%;
-  margin: 0 auto;
-}
-ion-list-header{
-  margin-top: 20px;
-  margin-bottom: 10px;
+#titulo {
+  padding-left: 30px;
   font-size: larger;
-}
-ion-item{
-  --background: none;
-  border: 2px solid #5E7FB4;
-  border-radius: 20px;
-  margin-bottom: 3x0px;
-  min-height: 30px;
-  max-height: 60px;
-  text-align: center;
-}
-ion-note{
-  padding-top: 5px;
-  margin-left: 30px;
 }

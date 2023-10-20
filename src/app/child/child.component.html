@@ -2,17 +2,19 @@
   <ion-header>
     <ion-toolbar>
       <ion-buttons slot="end">
-        <ion-button (click)="modal.dismiss()">Close</ion-button>
+        <ion-button (click)="modal.dismiss()">
+          <ion-icon name="close-sharp"></ion-icon>
+        </ion-button>
       </ion-buttons>
     </ion-toolbar>
   </ion-header>
   <ion-content>
-    <ion-list>
-      <ion-item>
-        <ion-checkbox (ionChange)="checkboxChanged($event)">
-          
-        </ion-checkbox>
-      </ion-item>
-    </ion-list>
+    <ion-grid>
+      
+    </ion-grid>
   </ion-content>
 </div>
+
+<ion-checkbox (ionChange)="checkboxChanged($event)">
+
+</ion-checkbox>

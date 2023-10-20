@@ -4,6 +4,7 @@ import { MyFooterComponent } from '../my-footer/my-footer.component';
 import { MyHeaderComponent } from '../my-header/my-header.component';
 import { IonicModule } from '@ionic/angular';
 import { ChildComponent } from '../child/child.component';
+import { NotificacaoComponent } from '../notificacao/notificacao.component';
 
 
 
@@ -11,7 +12,8 @@ import { ChildComponent } from '../child/child.component';
   declarations: [
     MyFooterComponent,
     MyHeaderComponent,
-    ChildComponent
+    ChildComponent,
+    NotificacaoComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { ChildComponent } from '../child/child.component';
   exports: [
     MyFooterComponent,
     MyHeaderComponent,
-    ChildComponent
+    ChildComponent,
+    NotificacaoComponent
   ]
 })
 export class SharedModule { }
