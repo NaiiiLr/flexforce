@@ -47,7 +47,11 @@ const routes: Routes = [
   {
     path: 'autenticacao',
     loadChildren: () => import('./autenticacao/autenticacao.module').then( m => m.AutenticacaoPageModule)
+  },  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
   },
+
 
 ];
 
