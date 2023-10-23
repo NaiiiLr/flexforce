@@ -10,41 +10,55 @@ import { Router } from '@angular/router';
 export class UsuarioListarPage implements OnInit {
 
   constructor(
-    public requisicao_service:RequisicaoService,
-    public router:Router,
+    public requisicao_service: RequisicaoService,
+    public router: Router,
   ) { }
-  
-  public usuarios:Array<any> = [];
-  
+
+  public usuarios: Array<any> = [];
+  public alertButtons = [
+    {
+      text: 'Não',
+      role: 'cancel'
+    },
+    {
+      text: 'Sim',
+      role: 'confirm'
+    }
+  ]
+
   ngOnInit() {
     this.listar();
   }
 
-  editar(id:number){
+  editar(id: number) {
     this.router.navigateByUrl('/cadastro-usuario/' + id);
   }
 
-  excluir(id:number){
+  excluir(id: number) {
     this.requisicao_service.get({
-      controller:'usuario-excluir',
-      id:id
+      controller: 'usuario-excluir',
+      id: id
     })
-    .subscribe( () =>{
-      this.listar();
-    })
-    ;
+      .subscribe(() => {
+        this.listar();
+      })
+      ;
   }
 
-  listar(){
+  listar() {
     this.requisicao_service.get({
-      controller:'usuario-listar'
+      controller: 'usuario-listar'
     })
     .subscribe(
-      (_res:any) => {
+      (_res: any) => {
         this.usuarios = _res;
       }
     );
-
-    }
-    
   }
+
+  setResult(ev:any, id:number){
+    if( ev.detail.role == 'confirm'){
+      this.excluir(id);
+    }
+  }
+}

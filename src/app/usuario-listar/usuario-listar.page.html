@@ -4,7 +4,13 @@
       <ion-item *ngFor="let usuario of usuarios">
         <ion-label> {{ usuario.nome }} </ion-label>
         <ion-icon name="create" (click)="editar(usuario.id)"></ion-icon>
-        <ion-icon name="trash" (click)="excluir(usuario.id)"></ion-icon>
+        <ion-icon name="trash" id="msgdlg-{{ usuario.id }}"></ion-icon>
+        <ion-alert
+          trigger="msgdlg-{{ usuario.id }}"
+          header="Deseja excluir?"
+          [buttons]="alertButtons"
+          (didDismiss)="setResult($event, usuario.id)">
+        </ion-alert>
       </ion-item>
     </ion-list>
   </ion-content>

@@ -12,13 +12,31 @@
     <ion-grid>
       <ion-row>
         <ion-col>
-          
+          <ion-title>
+            pipipipipipi
+          </ion-title>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-label></ion-label>
+          <ion-button (click)="startTimer()"  [disabled]="running">Iniciar</ion-button>
+          <ion-button (click)="stopTimer()" [disabled]="!running">Parar</ion-button>
+          <ion-label>{{ minutes | number: '2.0' }}:{{ seconds | number: '2.0' }}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-label>
+            Finalizar treino
+          </ion-label>
+          <ion-checkbox (ionChange)="checkboxChanged($event)">
+          </ion-checkbox>
         </ion-col>
       </ion-row>
     </ion-grid>
   </ion-content>
 </div>
 
-<ion-checkbox (ionChange)="checkboxChanged($event)">
 
-</ion-checkbox>
+
