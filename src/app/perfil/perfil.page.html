@@ -1,6 +1,46 @@
 <ion-app>
   <ion-content>
-
+    <ion-grid>
+      <ion-row class="border">
+        <ion-col>
+          <ion-label>
+            Nome: Davi D. Dorschaidt
+          </ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row class="border">
+        <ion-col>
+          <ion-label>
+            Número:
+          </ion-label>
+          <ion-label>
+            48 99345-6789
+          </ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row class="border">
+        <ion-col>
+          <ion-label>
+            Objetivo:
+          </ion-label>
+          <ion-label>
+            Emagrecimento
+          </ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-button expand="block" id="alerta">
+      Excluir conta
+    </ion-button>
+    <ion-button expand="block" href="/tela-inicial">
+      Alterar conta
+    </ion-button>
   </ion-content>
   <app-my-footer></app-my-footer>
 </ion-app>
+
+<ion-alert 
+  trigger="alerta" 
+  header="Deseja excluir sua conta?" 
+  [buttons]="alertButtons"
+  ></ion-alert>

@@ -12,4 +12,15 @@ export class PerfilPage implements OnInit {
   ngOnInit() {
   }
 
+  public alertButtons = [
+    {
+      text: 'Não',
+      role: 'cancel'
+    },
+    {
+      text: 'Sim',
+      role: 'confirm'
+    }
+  ]
+
 }
