@@ -8,18 +8,28 @@
       </ion-buttons>
     </ion-toolbar>
   </ion-header>
-  <ion-content>
+  <ion-content> 
     <ion-grid>
       <ion-row>
         <ion-col>
           <ion-title>
-            pipipipipipi
+            Rosca direta com barra
           </ion-title>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-label></ion-label>
+          <p>
+            Segure uma barra com as mãos afastadas na largura dos ombros, 
+            mantenha os cotovelos próximos ao corpo e dobre os cotovelos para 
+            levantar a barra em direção ao peito. Em seguida, abaixe a 
+            barra de volta à posição inicial.
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-label> Temporizador de descanso</ion-label><br>
           <ion-button (click)="startTimer()"  [disabled]="running">Iniciar</ion-button>
           <ion-button (click)="stopTimer()" [disabled]="!running">Parar</ion-button>
           <ion-label>{{ minutes | number: '2.0' }}:{{ seconds | number: '2.0' }}</ion-label>

@@ -11,8 +11,8 @@ import { ActivatedRoute } from '@angular/router';
 export class CadastroPersonalPage implements OnInit {
 
   public id:number = 0;
-  public nomePersonal:string = '';
-  public senhaPersonal:string = '';
+  public nome_personal:string = '';
+  public senha_personal:string = '';
   public confirmeSenhaPersonal:string = '';
 
   constructor(
@@ -30,8 +30,8 @@ export class CadastroPersonalPage implements OnInit {
         })
         .subscribe(
           (_dados:any) => {
-            this.nomePersonal = _dados.nome_personal;
-            this.senhaPersonal = _dados.login_personal;
+            this.nome_personal = _dados.nome_personal;
+            this.senha_personal = _dados.login_personal;
           }
         )
       }
@@ -51,8 +51,8 @@ export class CadastroPersonalPage implements OnInit {
     const fd = new FormData();
     fd.append('controller','personal');
     fd.append('id', String(this.id));
-    fd.append('nome', this.nomePersonal);
-    fd.append('senha', this.senhaPersonal);
+    fd.append('nome_personal', this.nome_personal);
+    fd.append('senha_personal', this.senha_personal);
 
     this.requisicao_service
     .post(fd)

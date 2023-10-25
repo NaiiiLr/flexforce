@@ -9,12 +9,12 @@
         </div>
         <div class="inputbox">
           <ion-label>Nome</ion-label>
-          <ion-input type="text" [(ngModel)]="nomePersonal"></ion-input>
+          <ion-input type="text" [(ngModel)]="nome_personal"></ion-input>
         </div>
         <div class="inputbox">
           <ion-icon name="lock-closed-sharp"></ion-icon>
           <ion-label>Senha</ion-label>
-          <ion-input type="password" [(ngModel)]="senhaPersonal"></ion-input> 
+          <ion-input type="password" [(ngModel)]="senha_personal"></ion-input> 
         </div>
         <div class="inputbox">
           <ion-icon name="lock-closed-sharp"></ion-icon>
@@ -22,7 +22,6 @@
           <ion-input type="password" [(ngModel)]="confirmeSenhaPersonal"></ion-input>
         </div>
         <ion-button (click)="salvar()"> Cadastrar </ion-button>
-        <p>Já possui conta? <br> <a href="/login-personal">Entre aqui</a></p>
       </div>
     </section>
   </ion-content>

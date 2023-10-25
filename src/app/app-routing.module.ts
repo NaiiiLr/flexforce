@@ -51,7 +51,8 @@ const routes: Routes = [
   {
     path: 'perfil',
     loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
-  },  {
+  },
+  {
     path: 'personal-listar',
     loadChildren: () => import('./personal-listar/personal-listar.module').then( m => m.PersonalListarPageModule)
   },

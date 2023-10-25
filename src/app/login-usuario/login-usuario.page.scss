@@ -40,9 +40,8 @@ section{
 .inputbox ion-label{
     position: absolute;
     left: 5px;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
     color: #fff;
-    font-size: 1em;
     pointer-events: none;
     transition: .5s;
 }
