@@ -55,7 +55,11 @@ const routes: Routes = [
   {
     path: 'personal-listar',
     loadChildren: () => import('./personal-listar/personal-listar.module').then( m => m.PersonalListarPageModule)
+  },  {
+    path: 'lista-nutricionista',
+    loadChildren: () => import('./lista-nutricionista/lista-nutricionista.module').then( m => m.ListaNutricionistaPageModule)
   },
+
 
 
 
