@@ -55,12 +55,24 @@ const routes: Routes = [
   {
     path: 'personal-listar',
     loadChildren: () => import('./personal-listar/personal-listar.module').then( m => m.PersonalListarPageModule)
-  },  {
+  },
+  {
     path: 'lista-nutricionista',
     loadChildren: () => import('./lista-nutricionista/lista-nutricionista.module').then( m => m.ListaNutricionistaPageModule)
   },
+  {
+    path: 'tela-personal',
+    loadChildren: () => import('./tela-personal/tela-personal.module').then( m => m.TelaPersonalPageModule)
+  },
+  {
+    path: 'editar-treino',
+    loadChildren: () => import('./editar-treino/editar-treino.module').then( m => m.EditarTreinoPageModule)
+  },
 
-
+  {
+    path: 'editar-treino/:userid',
+    loadChildren: () => import('./editar-treino/editar-treino.module').then( m => m.EditarTreinoPageModule)
+  },
 
 
 ];
